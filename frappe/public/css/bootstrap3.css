@@ -1389,7 +1389,7 @@ a.bg-danger:hover {
 }
 .page-header {
   padding-bottom: 9px;
-  margin: 40px 0 20px;
+  margin: 0px 0 0px;
   border-bottom: 1px solid #eee;
 }
 ul,
@@ -1569,7 +1569,7 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 760px;
   }
 }
 @media (min-width: 992px) {
@@ -4054,7 +4054,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-header {
-    float: left;
+   float: left; 
   }
 }
 .navbar-collapse {
@@ -4236,8 +4236,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin: 0;
   }
   .navbar-nav > li {
-   float: left;
-left: 20%;
+    float: left;
   }
   .navbar-nav > li > a {
     padding-top: 10px;

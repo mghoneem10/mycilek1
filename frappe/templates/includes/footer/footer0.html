@@ -1,0 +1,48 @@
+<footer class="web-footer">
+	<section class="footer-links">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 text-left">
+					<div class="row">
+					{% if footer_items -%}
+						<div class="col-sm-3">
+							<ul class="list-unstyled navbar-nav">
+								{% include "templates/includes/footer/footer_items.html" %}
+							</ul>
+						</div>
+					{% endif %}
+					</div>
+				</div>
+				 <div class="col-sm-6 text-right">
+                                 
+
+	<br />				
+	<table>
+                <tr>
+                        <td><a href="" ><img src="/files/face.png" style="width:60px;height:60px;" /></a></td>
+                        <td><a href="" ><img src="/files/g+.png" style="width:60px;height:60px;"/></a></td>
+                        <td><a href="" ><img src="/files/linked.png" style="width:60px;height:60px;"/></a></td>
+                        <td><a href="" ><img src="/files/tube.png" style="width:60px;height:60px;"/></a></td>
+                        <td><a href="" ><img src="/files/twitter.png" style="width:60px;height:60px;"/></a></td>
+                </tr>
+
+        </table>
+                                </div>
+
+				
+			</div>
+			<div class="row footer-bottom-line">
+				<div class="text-muted small col-sm-6">
+					{% if copyright %}
+						&copy; {{ copyright }}
+					{% elif footer_address%}
+						{{ footer_address }}
+					{% endif %}
+				</div>
+			              
+
+
+			</div>
+		</div>
+	</section>
+</footer>

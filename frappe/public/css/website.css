@@ -457,7 +457,7 @@ h6 a {
   margin-left: 5px;
 }
 .web-footer {
-  padding: 60px 0px;
+  padding: 6px 0px;
   min-height: 140px;
   border-top: 1px solid #EBEFF2;
 }
@@ -590,7 +590,7 @@ fieldset {
   border-top: 1px solid #EBEFF2;
 }
 .footer-bottom-line {
-  margin-top: 60px;
+  margin-top: 6px;
 }
 /* post and post list */
 .list-group-item {

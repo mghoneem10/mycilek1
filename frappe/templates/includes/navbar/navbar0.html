@@ -1,14 +1,11 @@
-<div style="position: absolute; z-index: 10;left: 3%;"><a href="http://mycilek.com" ><img src="/files/cilek-logo.png" style="width: 120px; hieght: 135px;" /></a></div>
 <header>
-<center>	<nav class="navbar navbar-default navbar-main" role="navigation">
-
-
+	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<!-- <a class="navbar-brand ellipsis" href="{{ url_prefix }}{{ home_page or "/" }}"> -->
 				<a class="navbar-brand ellipsis"
 					 href="{{ url_prefix }}{{ home_page or "/"}}">
-					<spane> </span>
+					<span>{{ brand_html or (frappe.get_hooks("brand_html") or ["Home"])[0] }}</span>
 				</a>
 				<!-- <a class="pull-right visible-xs navbar-toggle toggle-sidebar">
 					<i class="octicon octicon-three-bars"></i>
@@ -17,7 +14,6 @@
 					<button class="btn btn-default navbar-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 						<i class="octicon octicon-three-bars"></i>
 					</button>
-
 					{% include "templates/includes/navbar/dropdown_items.html" %}
 				</div>
 			</div>
@@ -26,6 +22,6 @@
 				{% include "templates/includes/navbar/navbar_items.html" %}
 				{% endblock %}
 			</div>
-		</div></center>
+		</div>
 	</nav>
 </header>

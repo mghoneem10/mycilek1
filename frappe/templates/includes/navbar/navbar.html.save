@@ -1,8 +1,10 @@
-<div style="position: absolute; z-index: 10;left: 3%;"><a href="http://mycilek.com" ><img src="/files/cilek-logo.png" style="width: 120px; hieght: 135px;" /></a></div>
+
 <header>
-<center>	<nav class="navbar navbar-default navbar-main" role="navigation">
 
 
+$g/cilek-logo.png" /></a>  </div>
+
+	<nav class="navbar navbar-default navbar-main" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<!-- <a class="navbar-brand ellipsis" href="{{ url_prefix }}{{ home_page or "/" }}"> -->
@@ -26,6 +28,6 @@
 				{% include "templates/includes/navbar/navbar_items.html" %}
 				{% endblock %}
 			</div>
-		</div></center>
+		</div>
 	</nav>
 </header>
